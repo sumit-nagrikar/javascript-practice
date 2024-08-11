@@ -28,9 +28,11 @@ reverseWords("ChatGPT is awesome"); // Output: "awesome is ChatGPT"
 //Second Function: reverseWords using Array Manipulation
 function reverseWords2(sentence) {
     // Split the sentence into words
+    //created an empty array to store words in reverse order
     let words = [];
-    let wordStart = 0;
+    let wordStart = 0;//to store new index every time
 
+    //Iterate over each charater in sentence
     for (let i = 0; i < sentence.length; i++) {
         if (sentence[i] === ' ') {
             words.unshift(sentence.substring(wordStart, i));
