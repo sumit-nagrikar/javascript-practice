@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print the current window contents</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    
+        .bg {
+            display: flex;
+        }
+        .one{
+            width: 50%;
+        }
+
+        .two{
+            width: 50%;
+            height: 100vh;
+            background-color: rgb(97, 85, 79);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg">
+
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+   <!--  <h1>Click below button to start printing</h1>
+    <button onclick="print_Current_Page()">Print</button> -->
+
+    <script>
+        function print_Current_Page(){
+            document.body.style.backgroundColor = 'gray'
+            const currentPage = document.documentElement.textContent;
+            console.log('method run')
+            console.log(currentPage);
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,5 @@
+// infinite for loop
+for (;;) {
+  console.log("This loop will run indefinitely!");
+  break;
+}

@@ -1,0 +1,45 @@
+const arr = [1,2,5,8,8]
+	
+/* //const found = arr.find(num => num > 5);
+
+//const isIncluded = arr.includes(10);
+
+console.log(isIncluded)
+
+const index = arr.indexOf(8);
+console.log(index)
+ */
+//let modifiedArray = arr.splice(0, 5, 'a','b');
+	
+console.log(`Original Array : ${arr}`)
+const subArr = arr.slice(1, 5); //Slice exclude the ending point
+console.log(subArr);
+
+
+/* console.log("original array "+arr)
+console.log("Modified Array "+modifiedArray) */
+
+/* const filteredArray = arr.filter(num => num>2)
+console.log(`Filtered Array : ${filteredArray}`)
+
+	
+const doubled = arr.map(num => num * 2);
+
+console.log(`Doubled Array using map(): ${doubled}`) */
+
+ 
+/* const sum = arr.reduce((acc, num) => acc + num, 0);
+
+console.log(sum) */
+
+
+//const arr = ['a', 'b', 'c']
+
+/* const merge = arr.concat(arr2)
+console.log(merge) */
+
+/* const str = arr.join(', ');
+console.log(str)
+ */
+
+//console.log(arr.reverse())

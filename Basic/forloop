@@ -1,0 +1,177 @@
+/* let age=16;
+let candrive= 'No'
+
+if(age>=18){
+if(candrive=='Yes')
+
+{
+    console.log('You can get a license');
+}
+else
+{
+    console.log('Learn to drive first');
+}
+}
+else
+{
+    console.log('You are under age');
+}
+ */
+// Checks if Number is Positive or not. Also checks it the number is even or odd.
+/* let  num = 15;
+if (num > 0) 
+{
+  console.log("The number is positive");
+  if (num % 2 == 0) 
+  {
+    console.log("The number is even");
+  }
+   else {
+    console.log("The number is odd");
+  }
+} 
+else 
+{
+  console.log("The number is not positive");
+} */
+
+//let button= 'Good_Day'
+
+/* switch(button) {
+
+    case 'Lays_Chips':
+          console.log("A pack of Chips");
+          
+
+    case 'Diet_Coke':
+        console.log("A can of Soft Drink");
+     
+
+    case 'Good_Day':
+        console.log("A pack of Biscuit");
+ 
+break;
+    default:
+        console.log("Wrong Input");
+}
+ */
+
+/* let dayOfWeek = 5;
+let dayName;
+
+switch (dayOfWeek) {
+  case 1:
+    dayName = 'Monday';
+    break;
+  case 2:
+    dayName = 'Tuesday';
+    break;
+  case 3:
+    dayName = 'Wednesday';
+    break;
+  case 4:
+    dayName = 'Thursday';
+    break;
+  case 5:
+    dayName = 'Friday';
+    
+  case 6:
+    dayName = 'Saturday';
+   
+  case 7:
+    dayName = 'Sunday';
+   
+  default:
+    dayName = 'Invalid day';
+    break;
+}
+
+console.log(dayName); // Output: "Friday" */
+
+
+/* let fruit = 'blueberry';
+let color; */
+
+/* switch (fruit) {
+  case 'banana':
+  case 'lemon':
+    color = 'yellow';
+    break;
+  case 'apple':
+  case 'cherry':
+  case 'strawberry':
+    color = 'red';
+    break;
+  case 'grape':
+  case 'blueberry':
+    color = 'purple';
+   break;
+  default:
+    color = 'unknown';
+    break;
+} */
+
+/* console.log(color);  */
+
+/* let x = 5;
+console.log(x>>2);
+ */
+
+/* let  x = 5;
+console.log(typeof(x));
+if (x === "5") {
+console.log("Hello");
+} else {
+console.log("World");
+} */
+
+
+
+
+
+
+
+// LOOPS: 
+// Write that I will improve my handwriting 100 times.
+
+// for(let count=100;count>0;count--)
+
+//while loop
+/* let count =1;
+
+while(count>0){
+  console.log(count);
+  count--;
+    }
+ */
+
+/* for(let count=1;count<=5;count++){
+
+   console.log('Teju');
+
+  for(let count2=1;count2<=2;count2++){
+
+    console.log('Say What');
+  }
+  for(let count3=1;count3<=2;count3++){
+
+    console.log('Loop3');
+  }
+} */
+
+// While is an entry controlled loop, Do while is an Exit controlleed loop
+
+let count =0;
+
+/* while(count<10)
+ {
+
+  count++;
+
+ if(count===5){
+  continue;
+ }
+ console.log("Inside loop " + count);
+
+  
+} */
