@@ -12,4 +12,4 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels("Coding is fun with fellow learners"));
+console.log("No of vowels:",countVowels("Coding is fun with fellow learners"));

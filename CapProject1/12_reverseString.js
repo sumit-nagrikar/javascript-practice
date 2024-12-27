@@ -13,4 +13,4 @@ reverseStr = reverseStr + str.charAt(i);
     return reverseStr;
 }
 
-console.log(reverseString2("atikiN  olleH"));
+console.log(reverseString2("dlroW olleH"));

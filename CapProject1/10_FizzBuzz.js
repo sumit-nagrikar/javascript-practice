@@ -19,7 +19,7 @@ switch(true){
 return result;
 }
 
-console.log(fizzBuzz(5));
+console.log(fizzBuzz(12));
 /* 
 function fizzBuzz(n) {
     const result = [];

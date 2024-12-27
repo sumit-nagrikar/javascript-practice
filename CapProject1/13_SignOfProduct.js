@@ -1,5 +1,4 @@
 function signOfProduct(nums) {
-    // Write your code inside this function only.
    let product = 1;
   if (nums.length != 0) {
     for (let i = 0; i < nums.length; i++) {
@@ -19,4 +18,4 @@ function signOfProduct(nums) {
 
 }
 
-console.log(signOfProduct([0, 6]));
+console.log(signOfProduct([-1, 0]));

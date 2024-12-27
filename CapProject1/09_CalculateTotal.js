@@ -12,10 +12,10 @@ const cart1 = [
   ];
   
 
-  function calculateTotal(cart) {
+function calculateTotal(cart) {
     // Write your code here
-  
-    const totalCost =  Object.values(cart).reduce((accumulator,item)=>{
+  // console.log(Object.values(cart));
+    const totalCost =  cart.reduce((accumulator,item)=>{
         const  itemCost =  item.price * item.quantity;
         return accumulator  + itemCost;
     },0);

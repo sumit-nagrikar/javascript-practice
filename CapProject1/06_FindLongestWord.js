@@ -2,20 +2,22 @@
 function findLongestWord(sentence) {
 	// Write your code here
     const words = sentence.split(' ');
-    let maxLength = 0;
+    let longestWord = "";
 
     for (let i = 0; i < words.length; i++) {
         const length = words[i].length;
-        if (length > maxLength) {
-            maxLength = length;
+        if (length > longestWord.length) {
+            longestWord = words[i];
         }
     }
 
-    return maxLength;
+    return longestWord;
 }
+console.log(findLongestWord("Hi i  am sumit who  is a great learner"));
+
 
 //Approach 2
-
+/* 
 function findLongestWordOptimised(sentence) {
     const words = sentence.split(' ');
     let maxLength = 0;
@@ -33,4 +35,4 @@ function findLongestWordOptimised(sentence) {
 
 
 console.log(findLongestWordOptimised("Hi i  am sumit who  is a great learner"));
-
+ */

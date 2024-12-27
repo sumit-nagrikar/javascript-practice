@@ -1,23 +1,25 @@
-function insert7(inputString){
+function insert7(str){
+    const array = str.split('')
     let charCount = 0;
-    let result = '';
+    let resultArray = [];
+    let currentChar = '';
 
-    for(let i=0;i<inputString.length;i++){
+    for (let index = 0; index < array.length; index++) {
+        currentChar = array[index];
 
-        const currentChar = inputString[i];//Get the current character
-
-        if(currentChar !==' '){
-            charCount++;//Incrementing character count
-
-            if(charCount%6===0){
-                result+= currentChar + '7';//Adding char + 7 after 6 each sixth character
-                continue; //Skip the rest of the loop for this iteration
+        if(currentChar !== ' '){
+            charCount++;
+            if(charCount % 6 === 0){
+                resultArray.push(currentChar + '7');
+                continue;
             }
         }
-        result += currentChar;//Append the current character to the result 
+
+        resultArray.push(currentChar);
+        
     }
 
-    return result;
+    return resultArray.join('');
 }
 
-console.log(insert7("hello my dear Aryan"));
+console.log(insert7('hello dear brother'));
