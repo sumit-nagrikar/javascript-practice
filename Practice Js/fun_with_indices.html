@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      Exercise 1: function that filters out elements located at even indices in
+      the array.
+    </p>
+    <p id="q1"></p>
+    <p>Exercise 2: Double Values at Odd Indices</p>
+    <p id="q2"></p>
+    <p>Exercise 3: Filter Elements Greater Than Their Index</p>
+    <p id="q3"></p>
+    <p>Exercise 4:Transform elements by Sum of Index and Value</p>
+    <p id="q4"></p>
+    <p>Exercise 5: Extract Prime Indices by : Sieve of eratosthenis</p>
+    <p id="q5"></p>
+    <p>Exercise 6: Filter Elements Divisible by Their Index</p>
+    <p id="q6"></p>
+    <p>
+      Exercise 8: Count Elements at Indices Multiple of X : Write a function to
+      count how many elements exist at indices that are multiples of x.
+    </p>
+    <p id="q7"></p>
+    <p>Exercise 10: Create Index-Value Pairs</p>
+    <p id="q10"></p>
+
+    <script>
+      var transformArrToObj = function (arr) {
+        return arr.map((value, index) => ({ index, value }));
+      };
+      let trans = transformArrToObj([10, 20, 30]);
+
+      var count = function (arr, x) {
+        if (x === 0) return 0;
+
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (i % x == 0) count++;
+        }
+        return count;
+      };
+      var filterEleDivisibleByIndex = function (arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] % i == 0) {
+            result.push(arr[i]);
+          } else {
+            result.push(arr[i] % i);
+          }
+        }
+        return result;
+      };
+
+      function filterOutAtNonPrimeIndices(arr) {
+        let n = arr.length + 1;
+        let isPrime = Array(n).fill(true);
+        isPrime[0] = isPrime[1] = false;
+
+        //make non-prime false
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+          for (let j = i * i; j <= n; j += i) {
+            isPrime[j] = false;
+          }
+        }
+
+        //collect all prime numbers
+        let primes = [];
+        for (let i = 0; i < isPrime.length; i++) {
+          if (isPrime[i]) {
+            primes.push(arr[i]);
+          }
+        }
+        return primes;
+      }
+
+      function filterElementsLessThanIndex(arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > i) {
+            result.push(arr[i]);
+          }
+        }
+        return result;
+      }
+
+      function filterOddIndices(arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (i % 2 !== 0) {
+            result.push(arr[i]);
+          }
+        }
+        return result;
+      }
+
+      var doubleAtOdd = function (arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (i % 2 !== 0) {
+            result.push(arr[i] * 2);
+          } else {
+            result.push(arr[i]);
+          }
+        }
+        return result;
+      };
+      var transform = function (arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+          result.push(arr[i] + i);
+        }
+        return result;
+      };
+      document.getElementById('q1').innerHTML = filterOddIndices([
+        10, 20, 30, 40, 50,
+      ]);
+      document.getElementById('q2').innerHTML = doubleAtOdd([
+        10, 20, 30, 40, 50,
+      ]);
+      document.getElementById('q3').innerHTML = filterElementsLessThanIndex([
+        0, 5, 2, 8, 3,
+      ]);
+      document.getElementById('q4').innerHTML = transform([1, 2, 3, 4]);
+      document.getElementById('q5').innerHTML = filterOutAtNonPrimeIndices([
+        'a',
+        'b',
+        'c',
+        'd',
+        'e',
+        'f',
+      ]);
+      document.getElementById('q6').innerHTML = filterEleDivisibleByIndex([
+        0, 10, 4, 21, 16,
+      ]);
+      document.getElementById('q7').innerHTML = count([10, 20, 30, 40, 50], 2);
+      document.getElementById('q10').innerHTML = JSON.stringify(trans, null, 2);
+    </script>
+  </body>
+</html>
